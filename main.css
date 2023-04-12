@@ -67,64 +67,39 @@ body {
 /*Поменял основной контент и сайдбары для удобства.*/
 .content {
   flex: 3;
-	border: solid blue 2px;
+	/*border: solid blue 2px; Бордер, чтобы было видно границы основного контента.*/
 	padding: 20px;
 	height: 200vh;
 }
-.main-content {
+.grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 20px;
-	
-}
-p {
-	font-size: 20px;
+	margin-top: 40px;
 }
 
 .grid-item {
-	width: 400px;
-	height: 400px;
-  background-color: #78ffd6;
-	margin-top: 50px;
-  padding: 10px;
-  border: 1px solid #ccc;
-	
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.grid-item-1 {
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-image: url(images/item1.jpg);
-	color: var(--font-color-grid-h);
-	font-size: 18px;
-	padding-top: 300px;
+
+img {
+	width: 100%;
+  height: 200px;
+  
 }
-.grid-item-2 {
-	background-image: url(images/item2.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	color: var(--font-color-grid-h);
-	font-size: 18px;
-	text-align: center;
-	justify-self: end;
+
+h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-.grid-item-3 {
-	background-image: url(images/item3.jpeg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	color: var(--font-color-grid-h);
-	font-size: 18px;
-	text-align: center;
-	justify-self: end;
-}
-.grid-item-4 {
-	background-image: url(images/item4.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	color: var(--font-color-grid-h);
-	font-size: 18px;
-	text-align: center;
-	justify-self: end;
+
+p {
+  font-size: 16px;
+  margin-top: 0;
 }
 
 .left-sidebar {
