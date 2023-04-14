@@ -68,8 +68,21 @@ body {
 	/*border: solid blue 2px; /*Бордер, чтобы было видно границы основного контента.*/
 	padding: 0 20px;
 	height: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.grid-container {
+.wrapper {
+padding: 20px 10px;
+}
+.text {
+	margin-top: 1rem;
+	line-height: 2em;
+}
+.img-t {
+	width: 100%;
+	height: 500px;
+	margin-top: 20px;
+}
+/*.grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -102,7 +115,7 @@ img {
 .main-top-text, p {
   font-size: 16px;
   margin-top: 0;
-}
+}*/
 
 .left-sidebar {
   flex: 1;
