@@ -8,8 +8,8 @@
 :root {
 	--font-color-grid-h: #fff;
 	--font-color-main: #127380;/*Для изменения цвета в хэдэре и основном*/
-
---f-c-sidebar: #000; /*Цвет шрифта для ссылок сайдбаров*/
+	--back-color-btn: #20BDFF;
+	--f-c-sidebar: #000; /*Цвет шрифта для ссылок сайдбаров*/
 
 	--font-color-footer: #fff;/*В основном для изменения цвета футера*/
 	--f-c-footer-a: #fff;/*Цвет шрифта для ссылок в футере.*/
@@ -103,6 +103,11 @@ img {
   font-size: 16px;
   margin-top: 0;
 }
+.btn-grid-ref {
+	background: var(--back-color-btn);
+	border-radius: 5px;
+}
+
 
 .left-sidebar {
   flex: 1;
@@ -129,7 +134,6 @@ img {
 	
 }
 .themes a {
-	text-transform: uppercase;
 	font-size: 1em;
 	color: var(--f-c-sidebar);
 	margin-left: 40px;
@@ -163,7 +167,7 @@ img {
 }
 .helper {
 	margin-top: 1em;
-	text-align: left;
+	text-align: center;
 	line-height: 3em;
 }
 .helper a {
@@ -180,13 +184,23 @@ img {
 .helper a:hover {
 	background-size: 0 1px, 100% 1px;
 }
+.socail-media {
+	text-align: center;
+	
+}
+.socail-media__ref {
+	margin-top: 20px;
+	line-height: 40px;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	height: 120px;
-	background:linear-gradient(to right,#1fa2ff,#12d8fa,#a6ffcb);
+	background:/*linear-gradient(to right,#1fa2ff,#12d8fa,#a6ffcb);*/#72D6EC;
+	filter: brightness(0.95);
 	margin-top: 50px;
 	color: var(--font-color-footer);
 }
