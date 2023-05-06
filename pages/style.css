@@ -74,6 +74,7 @@ body {
 padding: 20px 10px;
 }
 .text {
+	font-size: 17px;
 	margin-top: 1rem;
 	line-height: 2em;
 }
@@ -83,12 +84,22 @@ padding: 20px 10px;
 	margin-top: 20px;
 }
  h2 {
-	margin-top: 15px;
-}
-.ref-to-hp {
-	background: var(--back-color-btn);
+	margin: 15px auto;
 }
 
+.ref-to-hp {
+	float: right;
+	width: 250px;
+	height: 40px;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	text-align: center;
+	background: var(--back-color-btn);
+	border-radius: 5px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+}
 
 .left-sidebar {
   flex: 1;
