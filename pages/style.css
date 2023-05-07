@@ -13,12 +13,14 @@
 
 	--font-color-footer: #fff;/*В основном для изменения цвета футера*/
 	--f-c-footer-a: #fff;/*Цвет шрифта для ссылок в футере.*/
-
 }
+/*Таким образом можно сделать прокрутку по якорям более плавной, только эффект со статьей какой-то тошнотворный.
+html {
+	scroll-behavior: auto;
+}*/
 body {
 	max-width: 100%;
 	font-family: 'Montserrat', sans-serif;
-
 }
 .site-header__wrapper {
 	height: 120px;
@@ -37,6 +39,7 @@ body {
 
 
 .btn-in {
+	display: none;
 	width: 100px;
 	height: 40px;
 	border-radius: 7px;
@@ -46,6 +49,7 @@ body {
 	color: var(--font-color-main);
 }
 .btn-reg {
+	display: none;
 	width: 150px;
 	height: 40px;
 	border-radius: 7px;
@@ -56,7 +60,7 @@ body {
 	color: var(--font-color-main);
 }
 
-
+/*Основной контент*/
 .page-wrapper {
   display: flex;
 	margin: 50px 10px;
@@ -73,19 +77,34 @@ body {
 .wrapper {
 padding: 20px 10px;
 }
+/*Стилизация текстов с градацией*/
+h2 {
+	margin: 15px auto;
+}
+h3 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
 .text {
 	font-size: 17px;
 	margin-top: 1rem;
+	margin-bottom: 2rem;
 	line-height: 2em;
 }
+.border {
+	border:#72ECD6 solid 2px;
+	padding: 10px 10px;
+	font-size: 19px;
+}
+/*Можно добавить индикатор прочтения статьи*/
+
+/*Изображения*/
 .img-t {
 	width: 100%;
 	height: 500px;
 	margin-top: 20px;
 }
- h2 {
-	margin: 15px auto;
-}
+
 
 .ref-to-hp {
 	float: right;
@@ -99,6 +118,25 @@ padding: 20px 10px;
 	text-decoration: none;
 	color: #fff;
 	font-weight: 700;
+}
+/*Стилизовать кнопку*/
+.ref-to-hp :hover {
+	
+}
+
+/*Порядок: непосещенная, посещенная, наведение, активная. Если изменить один селекторов для коррекции специфичности, это приведет к сбою и неожиданным результатам.*/
+a:link {
+	color: blue;
+	/*text-decoration: none; — не пишем, так как это свойство прописано в дефолте*/
+}
+a:visited {
+	color: #fff;
+}
+a:hover {
+	color: #fff;
+}
+a:active {
+	color: #fff;
 }
 
 .left-sidebar {
@@ -176,11 +214,11 @@ padding: 20px 10px;
 .helper a:hover {
 	background-size: 0 1px, 100% 1px;
 }
-.socail-media {
+.social-media {
 	text-align: center;
-	
 }
-.socail-media__ref {
+.social-media__ref {
+	justify-content: center;
 	margin-top: 20px;
 	line-height: 40px;
 }

@@ -38,6 +38,7 @@ body {
 
 
 .btn-in {
+	display: none;
 	width: 100px;
 	height: 40px;
 	border-radius: 7px;
@@ -47,6 +48,7 @@ body {
 	color: var(--font-color-main);
 }
 .btn-reg {
+	display: none;
 	width: 150px;
 	height: 40px;
 	border-radius: 7px;
@@ -111,6 +113,7 @@ img {
 /*Стилизация параграфов*/
 p {
 	font-size: 17px;
+	
 }
 
 /*Кнопка «Читать далее»*/
@@ -292,11 +295,11 @@ button {
 .helper a:hover {
 	background-size: 0 1px, 100% 1px;
 }
-.socail-media {
+.social-media {
 	text-align: center;
 	
 }
-.socail-media__ref {
+.social-media__ref {
 	margin-top: 20px;
 	line-height: 40px;
 }
@@ -330,10 +333,12 @@ button {
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
   background-color: #f9f9fd;
+	opacity: 0.5;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: linear-gradient(180deg, #00c6fb, #005bea);
+	opacity: 0.5;
 }
