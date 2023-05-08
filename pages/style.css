@@ -91,21 +91,28 @@ h3 {
 	margin-bottom: 2rem;
 	line-height: 2em;
 }
+/*Визульный разделитель*/
 .border {
 	border:#72ECD6 solid 2px;
 	padding: 10px 10px;
 	font-size: 19px;
+	margin: 20px 0px;
 }
 /*Можно добавить индикатор прочтения статьи*/
 
 /*Изображения*/
 .img-t {
 	width: 100%;
-	height: 500px;
+	height: auto;
 	margin-top: 20px;
 }
+.img-divider {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
 
-
+/*Стилизация кнопки*/
 .ref-to-hp {
 	float: right;
 	width: 250px;
@@ -117,11 +124,12 @@ h3 {
 	border-radius: 5px;
 	text-decoration: none;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 600;
+	opacity: 90%;
 }
-/*Стилизовать кнопку*/
-.ref-to-hp :hover {
-	
+.ref-to-hp:hover {
+	background: #73D6EC;
+	background: linear-gradient(45deg, #72ECD6 0%, #73D6EC 74%);
 }
 
 /*Порядок: непосещенная, посещенная, наведение, активная. Если изменить один селекторов для коррекции специфичности, это приведет к сбою и неожиданным результатам.*/
