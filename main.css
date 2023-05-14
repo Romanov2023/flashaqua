@@ -29,11 +29,11 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
-.anti-logo {
-	color: var(--font-color-footer);
-	text-align: center;
-	line-height: 25px;
-	margin-left: 110px;
+.logo {
+	width: 100px;
+	height: auto;
+	margin-top: 15px;
+	margin-left: 100px;
 }
 /*Здесь нужно добавить декоративный элемент для заполнения пространства, чтобы не было пустоты!*/
 

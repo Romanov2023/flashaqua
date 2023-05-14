@@ -29,11 +29,11 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
-.anti-logo {
-	color: var(--font-color-footer);
-	text-align: center;
-	line-height: 25px;
-	margin-left: 110px;
+.logo {
+	width: 100px;
+	height: auto;
+	margin-top: 15px;
+	margin-left: 100px;
 }
 /*Здесь нужно добавить декоративный элемент для заполнения пространства, чтобы не было пустоты!*/
 
@@ -78,12 +78,19 @@ body {
 padding: 20px 10px;
 }
 /*Стилизация текстов с градацией*/
+h1 {
+	margin-bottom: 10px;
+}
 h2 {
 	margin: 15px auto;
 }
 h3 {
 	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 20px;
+}
+.p__marker {
+	font-weight: 500;
+	margin: 20px auto;
 }
 .text {
 	font-size: 17px;
@@ -93,9 +100,9 @@ h3 {
 }
 /*Визульный разделитель*/
 .border {
-	border:#72ECD6 solid 2px;
-	padding: 10px 10px;
 	font-size: 19px;
+	border-left:#72ECD6 solid 2px;
+	padding: 10px 30px;
 	margin: 20px 0px;
 }
 /*Можно добавить индикатор прочтения статьи*/
