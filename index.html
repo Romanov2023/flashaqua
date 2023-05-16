@@ -11,10 +11,20 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+
 	<header>
+
 		<div class="wrapper site-header__wrapper">
 			<a href="index.html"><img class="logo" src="images/logo.svg"></a>
-			
+			<nav>
+				<ul>
+					<li><a href="#">Рыбки</a></li>
+					<li><a href="#">Растения</a></li>
+					<li><a href="#">Креветки</a></li>
+					<li><a href="#">Аквариумы</a></li>
+					<li><a href="#">Оборудование</a></li>
+				</ul>
+			</nav>
 			<button class="btn-in">Вход</button>
 			<button class="btn-reg">Регистрация</button>
 
@@ -28,7 +38,7 @@
 		<aside class="left-sidebar">
 			<!-- левый сайдбар -->
 			<div class="background-left">
-			<p>Поиск по темам</p>
+			<span>Поиск по тегам</span>
 			</div>
 			<div class="themes">
 			<ul>
@@ -42,10 +52,15 @@
 		</aside>
 		<main class="content">
 			<!-- основной контент -->
-			<div class="main-top-text">
-				<h1>Новые статьи</h1>
-				<p>Нажмите, прочитайте, запомните.</p>
+
+			<!--Бордер-топ-->
+			<div class="border-container">
+				<div class="border-top-1"></div>
+			<div>
+				<p	class="main-top-text">Новые статьи</p>
+				<p	class="main-bottom-text">Откройте для себя аквариумный мир</p>
 			</div>
+			<div class="border-top-2"></div></div>
 			
 
 			<div class="main-content">
@@ -55,7 +70,7 @@
 						<h2>Гуппи</h2>
 						<p>«Рыбка миллионов» впервые была обнаружена в XIX веке и за это время приобрела большую популярность во всем мире. Узнайте больше о содержании гуппи!</p>
 						<div class="frame">
-							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать далее</a></button>
+							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать</a></button>
 						</div>
 					</div>
 					<div class="grid-item">
@@ -63,7 +78,7 @@
 						<h2>Карликовые раки</h2>
 						<p>Карликовые оранжевые раки родом из Мексики. Они имеют яркую окраску и небольшой размер, что делает их идеальными жителями для небольших аквариумов.</p>
 						<div class="frame">
-							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать далее</a></button>
+							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать</a></button>
 						</div>
 					</div>
 					<div class="grid-item">
@@ -71,7 +86,7 @@
 						<h2>Радужницы Боэсмена</h2>
 						<p>Заметные яркие рыбки будут красиво смотреться в аквариуме от 250 литров. Размер радужниц начинается от 8-10 см. Зелёные растения будут отлично контрастировать.</p>
 						<div class="frame">
-							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать далее</a></button>
+							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать</a></button>
 						</div>
 					</div>
 					<div class="grid-item">
@@ -79,7 +94,7 @@
 						<h2>Буцефаландра</h2>
 						<p>В природе существует множество разновидностей буцефаландр. Это растение из семейства ароидных. Если обеспечить буцефаландре подходящие условия, она зацветет.</p>
 						<div class="frame">
-							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать далее</a></button>
+							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать</a></button>
 						</div>
 					</div>
 					<div class="grid-item">
@@ -87,7 +102,7 @@
 						<h2>Дискусы</h2>
 						<p>Эти большие рыбы считаются одним из эталонов красоты, а их содержание является показателем квалификации аквариумиста. А за счёт своей формы дискус имеет поределенный шарм.</p>
 						<div class="frame">
-							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать далее</a></button>
+							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать</a></button>
 						</div>
 					</div>
 					<div class="grid-item">
@@ -95,15 +110,14 @@
 						<h2>Апистограммы</h2>
 						<p>Апистограммы Рамирези также называют «аквариумными бабочками». Они относятся к цихлидам и при этом имеют миролюбвиый нрав. Содержать их лучше парой или стайкой.</p>
 						<div class="frame">
-							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать далее</a></button>
+							<button class="custom-btn btn-3"><a class="btn-read-more" href="/pages/guppy.html">Читать</a></button>
 						</div>
 					</div>
 					
 				</div>
 
 		</main>
-		<aside class="right-sidebar">
-			<!-- правый сайдбар -->
+		<!--<aside class="right-sidebar">
 			<div class="background-right">
 			<p>Популярные статьи</p>
 		</div>
@@ -128,20 +142,8 @@
 			</ul>
 		</div>
 		</div>
-		</aside>
+		</aside>-->
 	</div>
-	<footer>
-	<div class="footer gradient-border">
-		<div class="contacts">
-			<h3>Kонтакты</h3>
-			<p>E-mail: info@example.com</p>
-		</div>
-		<div class="service-info">
-			<h3>Служебная информация</h3>
-			<a class="footer__a" href="#">Журнал обновлений</a>
-		</div>
-	</div>
-</footer>
 
 </body>
 </html>
