@@ -8,7 +8,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="output.css">
 	<link rel="stylesheet" href="main.css">
+	
 	<script src="https://kit.fontawesome.com/8d616b17d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,17 +19,83 @@
 
 		<div class="wrapper site-header__wrapper">
 			<a href="index.html"><img class="logo" src="images/logo.svg"></a>
+
 			<nav>
 				<ul>
-					<li><a href="#">Рыбки</a></li>
-					<li><a href="#">Растения</a></li>
-					<li><a href="#">Креветки</a></li>
-					<li><a href="#">Аквариумы</a></li>
-					<li><a href="#">Декор</a></li>
-				</ul>
+					<div class="title">
+						<div class="main">
+							<input type="checkbox" id="drop-1" hidden>
+							<label class="dropHeader dropHeader-1" for="drop-1">Рыбки</label>
+							<div class="list list-1">
+							<div class="item">Пецилиевые</div>
+							<div class="item">Лабиринтовые</div>
+							<div class="item">Харациновые</div>
+							<div class="item">Цихловые</div>
+							<div class="item">Карпозубые</div>
+							</div>
+					</div>
+					</div>
+				
+					<div class="title">
+						<div class="main">
+							<input type="checkbox" id="drop-2" hidden>
+							<label class="dropHeader dropHeader-2" for="drop-2">Креветки</label>
+							<div class="list list-2">
+							<div class="item">Неокаридины</div>
+							<div class="item">Каридины</div>
+							<div class="item">Веерные</div>
+							<div class="item">Амано</div>
+							</div>
+					</div>
+					</div>
+
+						<div class="title">
+							<div class="main">
+								<input type="checkbox" id="drop-3" hidden>
+								<label class="dropHeader dropHeader-3" for="drop-3">Растения</label>
+								<div class="list list-3">
+								<div class="item">Роголистники</div>
+								<div class="item">Анубиасы</div>
+								<div class="item">Криптокорины</div>
+								<div class="item">Эхинодорусы</div>
+								<div class="item">Буцефаландры</div>
+								</div>
+						</div>
+						</div>
+
+						<div class="title">
+							<div class="main">
+								<input type="checkbox" id="drop-4" hidden>
+								<label class="dropHeader dropHeader-4" for="drop-4">Аквариумы</label>
+								<div class="list list-4">
+								<div class="item">Формы</div>
+								<div class="item">Объем</div>
+								<div class="item">Освещение</div>
+								<div class="item">Фильтрация</div>
+								<div class="item">Аэрация</div>
+								</div>
+						</div>
+						</div>
+
+						<div class="title">
+							<div class="main">
+								<input type="checkbox" id="drop-5" hidden>
+								<label class="dropHeader dropHeader-5" for="drop-5">Декор</label>
+								<div class="list list-5">
+								<div class="item">Коряги</div>
+								<div class="item">Камни</div>
+								<div class="item">Кактус</div>
+								</div>
+						</div>
+						</div>
+					</ul>
 			</nav>
+
+			
+			<!--
 			<button class="btn-in">Вход</button>
 			<button class="btn-reg">Регистрация</button>
+			-->
 
 			<!--Сюда необходимо добавить картинку профиля.-->
 		</div>
@@ -98,7 +166,7 @@
 				<div class="border-top-1"></div>
 			<div>
 				<p	class="main-top-text">Новые статьи</p>
-				<p	class="main-bottom-text">Откройте для себя аквариумный мир</p>
+				<!--<p	class="main-bottom-text">Откройте для себя<br>АКВАРИУМНЫЙ МИР</p>-->
 			</div>
 			<div class="border-top-2"></div></div>
 			

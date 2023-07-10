@@ -24,7 +24,7 @@ body {
 }
 .site-header__wrapper {
 	height: 120px;
-	background: linear-gradient(180deg, #72D6EC 43.43%, #72ECD6 87.88%);
+	background: linear-gradient(180deg, #0A86FA 0%, #00A9EE 100%);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -68,7 +68,7 @@ body {
 }
 /*Поменял основной контент и сайдбары для удобства.*/
 .content {
-  flex: 3;
+  flex: 4;
 	/*border: solid blue 2px; /*Бордер, чтобы было видно границы основного контента.*/
 	padding: 0 20px;
 	height: auto;
@@ -77,6 +77,7 @@ body {
 .wrapper {
 padding: 20px 10px;
 }
+
 /*Стилизация текстов с градацией*/
 h1 {
 	margin-bottom: 10px;
@@ -146,7 +147,6 @@ h3 {
 /*Порядок: непосещенная, посещенная, наведение, активная. Если изменить один селекторов для коррекции специфичности, это приведет к сбою и неожиданным результатам.*/
 a:link {
 	color: blue;
-	/*text-decoration: none; — не пишем, так как это свойство прописано в дефолте*/
 }
 a:visited {
 	color: #fff;
@@ -161,8 +161,8 @@ a:active {
 .left-sidebar {
   flex: 1;
 	height: 90vh; /*Остальные элементы wrapper приняли номинально такую же высоту. Но я задал им свои парметры.*/
-	border: solid rgba(115, 236, 214, 0.6) 2px;
-	color: var(--font-color-main);
+	border: 2px solid rgba(2, 169, 240, 1);
+	
 	/*Добавить липкость*/
 	position: -webkit-sticky;
 	position: sticky;
@@ -171,8 +171,7 @@ a:active {
 .background-left {
 	width: 100%;
 	height: 40px;
-	background: #73ECD6;
-	opacity: 0.6;
+	background: (180deg, #0A87FA 0%, #01A9EF 100%);
 	font-weight: 500;
 	text-align: center;
 	padding-top: 10px;
@@ -197,13 +196,13 @@ a:active {
 	background-size: 0 1px, 100% 1px;
 }
 
-.right-sidebar {
+/*.right-sidebar {
   flex: 1;
 	border: solid rgba(115, 236, 214, 0.6) 2px;
 	color: var(--font-color-main);
 	height: 90vh;
 	/*Добавить липкость*/
-	position: -webkit-sticky;
+	/*position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 }
@@ -243,16 +242,17 @@ a:active {
 	margin-top: 20px;
 	line-height: 40px;
 }
+*/
 
 
-.footer {
+/*.footer {
   display: flex;
   flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	height: 120px;
-	background:/*linear-gradient(to right,#1fa2ff,#12d8fa,#a6ffcb);*/#72D6EC;
-	filter: brightness(0.95);
+	background:/*linear-gradient(to right,#1fa2ff,#12d8fa,#a6ffcb);*//*#72D6EC;*/
+	/*filter: brightness(0.95);
 	margin-top: 50px;
 	color: var(--font-color-footer);
 }
@@ -262,7 +262,7 @@ a:active {
 .gradient-border {
   border-top: 3px solid transparent;
   border-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet) 1;
-}
+}*/
 
 
 
