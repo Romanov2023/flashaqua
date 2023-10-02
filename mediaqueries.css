@@ -1,0 +1,217 @@
+	/*для десктопов с шириной экрана до 1200 пикселей*/ 
+@media screen and (width >= 1200px) {
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 2fr);
+		grid-template-rows: repeat(2, auto);
+		justify-content: center;
+		gap: 2rem;
+		margin-top: 40px;
+	}
+	.grid-item {
+		width: 360px;
+		height: 450px;
+		background-color: #fff;
+		padding: 20px;
+		box-shadow: 0 0 10px rgba(34, 180, 242, 0.3);
+	}
+	img {
+		width: 100%;
+		height: 200px;
+	}
+}
+
+	/*для планшетов с шириной экрана от 768 пикселей*/
+@media screen and (width <= 768px) {
+
+	.logo {
+		flex: 1;
+		width: 100px;
+		height: auto;
+		margin-top: 15px;
+		margin-left: 115px;
+	}
+
+	/*Разделы сайта*/
+	nav {
+		display: none;
+	}
+	nav ul {
+		flex: auto;
+		display: flex;
+		list-style: none;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 0;
+	}
+	nav li {
+		display: flex;
+		align-items: center; 
+		justify-content: center;
+		margin-right: 20px;
+		background: rgba(17, 115, 200, 1);
+		border-radius: 3px;
+		text-align: center;
+		width: 100px;
+		height: 25px;
+	}
+	nav a {
+		color: rgba(255, 255, 255, 1);
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.content {
+		/*border: solid blue 2px;*/
+		padding: 0px 0px 0px 0px;
+		/*justify-content: center;*/
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+		grid-template-rows: repeat(2, auto);
+		justify-content: center;
+		/*gap: 1rem;*/
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*.grid-item {
+		width: 45%;
+		height: 450px;
+		padding: 20px;
+	}
+	img {
+		width: 100%;
+		height: 200px;
+	}*/
+
+	/*Сайдбар*/
+.left-sidebar {
+	display: none;
+  flex: 1;
+	height: 90vh;
+	border: 2px solid rgba(2, 169, 240, 1);
+	color: var(--font-color-sidebar);
+	/*Добавить липкость*/
+	/*position: -webkit-sticky;
+	position: sticky;
+	top: 0;*/
+}
+.background-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 40px;
+	background: var(--back-sidebar);
+	color: var(--head-font-color-sidebar);
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	padding: 15px 20px;
+}
+.themes {
+	margin-top: 1em;
+	margin-left: 2em;
+	margin-bottom: 1em;
+	text-align: left;
+	line-height: 2em;
+	color: var(--f-c-sidebar);
+	font-size: 16px;
+	font-weight: 500;
+	height: 45vh;
+	overflow: auto;
+}
+.fa-brands {
+	font-size: 60px; /* изменение размера иконки */
+	/*color:  /* изменение цвета иконки */
+	margin: 30px 20px;
+	/*margin-right: 30px; /* добавление отступа справа */
+}
+
+.social-media__ref {
+	display: none;
+	margin-top: 20px;
+	text-align: center;
+	/*line-height: 40px;*/
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+}
+/*Порядок: непосещенная, посещенная, наведение, активная. Если изменить один селекторов для коррекции специфичности, это приведет к сбою и неожиданным результатам.*/
+.themes>ul>li>a:link {
+	color: var(--font-color-sidebar);
+	/*text-decoration: none; — не пишем, так как это свойство прописано в дефолте*/
+}
+.themes>ul>li>a:visited {
+	color: var(--font-color-sidebar);
+}
+.themes>ul>li>a:hover {
+	color: var(--font-color-sidebar);
+}
+.themes>ul>li>a:active {
+	color: var(--font-color-sidebar);
+}
+/*Порядок: непосещенная, посещенная, наведение, активная. Если изменить один селекторов для коррекции специфичности, это приведет к сбою и неожиданным результатам.*/
+.social-media__ref>ul>li>a:link {
+	color: var(--font-color-sidebar);
+	/*text-decoration: none; — не пишем, так как это свойство прописано в дефолте*/
+}
+.social-media__ref>ul>li>a:visited {
+	color: var(--font-color-sidebar);
+}
+.social-media__ref>ul>li>a:hover {
+	color: var(--font-color-sidebar);
+}
+.social-media__ref>ul>li>a:active {
+	color: var(--font-color-sidebar);
+}
+}
+
+	/*для смартфонов*/
+@media screen and (width <= 480px) {
+	.logo {
+		flex: 1;
+		width: 100px;
+		height: auto;
+		margin: 15px 0px 0px 150px;
+	}
+	nav {
+		display: none;
+	}
+	.left-sidebar {
+		display: none;
+	}
+/*Добавил отступы в адаптив, однако дело не в них, а в fr, потому что невидимые отступы меняются в зависимости новых значений fr. Если изменять внутр. отступы, то летит вёрстка у других моделей смартфонов.*/
+	.content {
+		/*border: solid blue 2px;*/
+		padding: 0px 0px 0px 0px;
+		/*justify-content: center;*/
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(3, auto);
+		justify-content: center;
+		/*position: absolute;
+		right: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);*/
+		/*justify-self: unset;*/
+		/*gap: 1rem;*/
+		margin-left: auto;
+		margin-right: auto;
+		}
+		.grid-item {
+			width: 100%;
+			height: 450px;
+			padding: 20px;
+		}
+		img {
+			width: 100%;
+			height: 200px;
+		}
+}
