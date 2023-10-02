@@ -51,12 +51,6 @@ nav ul {
   margin-right: 1.25rem;
   padding: 0;
 }
-nav ul {
-	list-style: none;
-	margin-left: 8rem;
-  margin-right: 1.25rem;
-  padding: 0;
-}
 nav li {
 	display: inline-block;
 	align-items: center; 
