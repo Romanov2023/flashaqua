@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,21 +13,25 @@
 	<link rel="stylesheet" href="mediaqueries.css">
 	
 	<script src="https://kit.fontawesome.com/8d616b17d5.js" crossorigin="anonymous"></script>
+	<script defer src="main.js"></script>
 </head>
 <body>
 
-	<header>
+	<header class="header open">
 
-		<div class="wrapper site-header__wrapper">
-			<a href="index.html"><img class="logo" src="images/logo.svg"></a>
+		<div class="container header__container">
+			<button class="header__burger-btn" id="burger">
+				<span></span><span></span><span></span>
+			</button>
+			<a href="index.html" class="logo"><img class="logo__img" src="images/logo.svg"></a>
 
-			<nav>
-				<ul>
-					<li><a href="" class="nav_a">Рыбки</a></li>
-					<li><a href="" class="nav_a">Аквариумы</a></li>
-					<li><a href="" class="nav_a">Растения</a></li>
-					<li><a href="" class="nav_a">Декор</a></li>
-					<li><a href="" class="nav_a">Креветки</a></li>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a class="menu__link" href="#">Рыбки</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Аквариумы</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Растения</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Декор</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Креветки</a></li>
 					</ul>
 			</nav>
 
@@ -76,7 +80,6 @@
 				<li><a href="#">#чистка</a></li>
 				<li><a href="#">#тумба</a></li>
 				<li><a href="#">#кормление</a></li>
-				<li><a href="#">#TEST2</a></li>
 			</ul>
 			</div>
 			<div class="background-left">

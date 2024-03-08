@@ -1,6 +1,9 @@
 	/*для десктопов с шириной экрана до 1200 пикселей*/ 
 @media screen and (width > 1200px) {
-
+	/*.menu__item {
+		flex: 0 0 calc(100%/2);
+	}
+	*/
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(3, 2fr);
@@ -24,7 +27,49 @@
 
 	/*для планшетов с шириной экрана от 768 пикселей*/
 @media screen and (width <= 768px) {
+	.logo__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: auto;
 
+		/*margin-top: 15px;
+		margin-left: 115px;*/
+	}
+	.header__burger-btn {
+		display: block;
+	}
+	.menu {
+		position: absolute;
+		left: -350px;
+		top: 0;
+		width: 350px;
+		background-color: transparent;
+		padding: 75px 20px 20px 20px;
+		transition: transform .5s;
+	}
+	.menu__list {
+		/*display: block;*/
+			display: flex;
+			flex-direction: column;
+			/*width: 100%;*/
+			align-items: stretch;
+			list-style: none;
+			/*margin-left: 8rem;
+			margin-right: 1.25rem;*/
+			padding: 0;
+	}
+	.menu__link{
+		display: block;
+		color: white;
+		font-size: 21px;
+		padding: 10px 0;
+
+	}
+	.header.open .menu {
+		transform: translateX(100%);
+	}
 	.logo {
 		flex: 1;
 		width: 100px;
@@ -33,35 +78,6 @@
 		margin-left: 115px;
 	}
 
-	/*Разделы сайта*/
-	nav {
-		display: none;
-	}
-	nav ul {
-		flex: auto;
-		display: flex;
-		list-style: none;
-		margin-left: 20px;
-		margin-right: 20px;
-		padding: 0;
-	}
-	nav li {
-		display: flex;
-		align-items: center; 
-		justify-content: center;
-		margin-right: 20px;
-		background: rgba(17, 115, 200, 1);
-		border-radius: 3px;
-		text-align: center;
-		width: 100px;
-		height: 25px;
-	}
-	nav a {
-		color: rgba(255, 255, 255, 1);
-		text-decoration: none;
-		font-size: 20px;
-		font-weight: 700;
-	}
 
 	.content {
 		/*border: solid blue 2px;*/
@@ -178,9 +194,6 @@
 		width: 100px;
 		height: auto;
 		margin: 15px 0px 0px 150px;
-	}
-	nav {
-		display: none;
 	}
 	.left-sidebar {
 		display: none;
